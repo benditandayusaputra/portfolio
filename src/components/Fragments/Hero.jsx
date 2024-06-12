@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="text-center mt-5 md:text-left md:max-w-lg md:py-6 pr-4 lg:pl-4 lg:pr-15 md:pr-10 pl-4">
         <h1 className="text-lg mb-2">Hi, I'm Bendi Tandayu Saputra</h1>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          I'M A<span className="text-sky-400">WEB/APP</span>
+          I'M A <span className="text-sky-400">WEB/APP</span>
           <br className="hidden md:block" />{" "}
           <span className="text-sky-400">DEVELOPER</span>
         </h2>
