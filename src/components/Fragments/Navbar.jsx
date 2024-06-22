@@ -1,13 +1,72 @@
 import React, { useState } from "react";
 import { FaInstagram, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
-import Logo from "../Elements/Logo";
-import Link from "../Elements/Link";
+import Logo from "../Elements/Logo.jsx";
+import Anchor from "../Elements/Anchor.jsx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const menus = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
+
+  const sosmeds = [
+    {
+      name: "Whatsapp",
+      icon: <FaWhatsapp className="w-6 h-6" />,
+      link: "https://api.whatsapp.com/send/?phone=6285876878126&text&type=phone_number&app_absent=0",
+    },
+    {
+      name: "Instagram",
+      icon: <FaInstagram className="w-6 h-6" />,
+      link: "https://www.instagram.com/benditandayusaputra_/",
+    },
+    {
+      name: "GitHub",
+      icon: <FaGithub className="w-6 h-6" />,
+      link: "https://github.com/benditandayusaputra",
+    },
+    {
+      name: "Email",
+      icon: <FaEnvelope className="w-6 h-6" />,
+      link: "mailto:benditandayusaputra@gmail.com",
+    },
+  ];
+
+  const renderMenus = () => {
+    return menus.map((menu) => (
+      <Link key={menu.name} to={menu.link}>
+        {menu.name}
+      </Link>
+    ));
+  };
+
+  const renderSosmeds = () => {
+    return sosmeds.map((sosmed) => (
+      <Anchor key={sosmed.name} to={sosmed.link} target="_blank">
+        {sosmed.icon}
+      </Anchor>
+    ));
   };
 
   return (
@@ -17,27 +76,11 @@ const Navbar = () => {
           <Logo />
         </div>
         <div className="hidden md:flex space-x-5 items-center">
-          <Link to="#">Home</Link>
-          <Link to="#">Projects</Link>
-          <Link to="#">About</Link>
-          <Link to="#">Contact</Link>
+          {renderMenus()}
           <div className="flex items-center px-6">
             <div className="h-6 border-l border-white"></div>
           </div>
-          <div className="flex space-x-5 ml-4">
-            <Link to="https://api.whatsapp.com/send?phone=6285876878126">
-              <FaWhatsapp className="w-6 h-6" />
-            </Link>
-            <Link to="https://www.instagram.com/benditandayusaputra_/">
-              <FaInstagram className="w-6 h-6" />
-            </Link>
-            <Link to="https://github.com/benditandayusaputra">
-              <FaGithub className="w-6 h-6" />
-            </Link>
-            <Link to="mailto:benditandayusaputra@gmail.com">
-              <FaEnvelope className="w-6 h-6" />
-            </Link>
-          </div>
+          <div className="flex space-x-5 ml-4">{renderSosmeds()}</div>
         </div>
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu}>
@@ -60,21 +103,8 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-dark flex flex-col items-center space-y-4 mt-6 fixed w-full z-10 pb-8">
-          <Link to="#">Home</Link>
-          <Link to="#">Projects</Link>
-          <Link to="#">About</Link>
-          <Link to="#">Contact</Link>
-          <div className="flex space-x-4 pt-4">
-            <Link to="#">
-              <FaWhatsapp className="w-6 h-6" />
-            </Link>
-            <Link to="#">
-              <FaInstagram className="w-6 h-6" />
-            </Link>
-            <Link to="#">
-              <FaGithub className="w-6 h-6" />
-            </Link>
-          </div>
+          {renderMenus()}
+          <div className="flex space-x-4 pt-4">{renderSosmeds()}</div>
         </div>
       )}
     </nav>

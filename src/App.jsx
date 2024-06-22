@@ -1,18 +1,12 @@
-import "./App.css";
-import Hero from "./components/Fragments/Hero";
-import Navbar from "./components/Fragments/Navbar";
-import Skills from "./components/Fragments/Skills";
+import { ThemeProvider } from "./ThemeContext";
+import { RouterProvider } from "react-router-dom";
+import routes from "./routes.jsx";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <div className="my-20"></div>
-        <Skills />
-      </main>
-    </>
+    <ThemeProvider>
+      <RouterProvider router={routes} />
+    </ThemeProvider>
   );
 }
 

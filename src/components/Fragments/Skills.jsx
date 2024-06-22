@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Skill from "../Elements/Skill.jsx";
+import SubTitle from "../Elements/SubTitle.jsx";
+import SlideOver from "../Elements/SlideOver.jsx";
+import allSkills from "../../data/skills.json";
 import {
   SiPython,
   SiGit,
@@ -21,50 +25,90 @@ import {
 
 const skills = [
   {
-    name: "Html & CSS",
+    id: 1,
+    name: "HTML & CSS",
     icon: <SiHtml5 />,
     secondaryIcon: <SiCss3 />,
   },
-  { name: "PHP", icon: <SiPhp /> },
-  { name: "JavaScript", icon: <SiJavascript /> },
-  { name: "Python", icon: <SiPython /> },
-  { name: "MySql", icon: <SiMysql /> },
-  { name: "PostgreSQL", icon: <SiPostgresql /> },
-  { name: "SQL Server", icon: <SiMicrosoftsqlserver /> },
-  { name: "Bootstrap", icon: <SiBootstrap /> },
-  { name: "Tailwind", icon: <SiTailwindcss /> },
-  { name: "JQuery", icon: <SiJquery /> },
-  { name: "Laravel", icon: <SiLaravel /> },
-  { name: "CodeIgniter", icon: <SiCodeigniter /> },
-  { name: "Vue", icon: <SiVuedotjs /> },
-  { name: "React", icon: <SiReact /> },
+  { id: 2, name: "PHP", icon: <SiPhp /> },
+  { id: 3, name: "JavaScript", icon: <SiJavascript /> },
+  { id: 4, name: "Python", icon: <SiPython /> },
+  { id: 5, name: "MySql", icon: <SiMysql /> },
+  { id: 6, name: "PostgreSQL", icon: <SiPostgresql /> },
+  { id: 7, name: "SQL Server", icon: <SiMicrosoftsqlserver /> },
+  { id: 8, name: "Bootstrap", icon: <SiBootstrap /> },
+  { id: 9, name: "Tailwind", icon: <SiTailwindcss /> },
+  { id: 10, name: "JQuery", icon: <SiJquery /> },
+  { id: 11, name: "Laravel", icon: <SiLaravel /> },
+  { id: 12, name: "CodeIgniter", icon: <SiCodeigniter /> },
+  { id: 13, name: "Vue", icon: <SiVuedotjs /> },
+  { id: 14, name: "React", icon: <SiReact /> },
   {
+    id: 15,
     name: "Flask Microweb Framework",
     icon: <SiFlask />,
   },
-  { name: "Git Source Control", icon: <SiGit /> },
+  { id: 16, name: "Git Source Control", icon: <SiGit /> },
 ];
 
 const Skills = () => {
+  const [activeSkill, setActiveSkill] = useState(null);
+  const [isSlideOverOpen, setIsSlideOverOpen] = useState(false);
+  const [detailSkill, setDetailSkill] = useState(null);
+
+  const openSlideOver = () => {
+    setIsSlideOverOpen(true);
+  };
+
+  const closeSlideOver = () => {
+    setIsSlideOverOpen(false);
+    setActiveSkill(null);
+  };
+
   return (
     <div className="p-6 rounded-lg">
-      <h2 className="text-white text-4xl text-center font-bold mb-10">
-        My Skills
-      </h2>
+      <SubTitle>
+        Skills
+        <div className={`w-[130px] h-1 bg-light mt-4 mx-auto`}></div>
+      </SubTitle>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
-        {skills.map((skill) => (
-          <div
+        {skills.map((skill, index) => (
+          <Skill
             key={skill.name}
-            className="flex flex-col items-center border border-white bg-transparent p-4 rounded-lg text-white hover:text-sky-400 hover:border-sky-400"
+            name={skill.name}
+            addClass={`${
+              activeSkill && activeSkill.name === skill.name
+                ? "scale-110 shadow-lg shadow-light"
+                : ""
+            }`}
+            onClick={() => {
+              setActiveSkill(skill);
+              openSlideOver();
+              setDetailSkill(allSkills[index]);
+            }}
           >
-            <div className="h-12 mb-4 text-4xl flex flex-row justify-center items-center hover:text-sky-400">
-              {skill.icon}
-              {skill.secondaryIcon && skill.secondaryIcon}
-            </div>
-            <span className="text-center">{skill.name}</span>
-          </div>
+            {skill.icon}
+            {skill.secondaryIcon && skill.secondaryIcon}
+          </Skill>
         ))}
       </div>
+      <SlideOver
+        isOpen={isSlideOverOpen}
+        onClose={closeSlideOver}
+        skill={activeSkill}
+      >
+        <div
+          dangerouslySetInnerHTML={{
+            __html: detailSkill && detailSkill.description,
+          }}
+        ></div>
+        <br />
+        <div
+          dangerouslySetInnerHTML={{
+            __html: detailSkill && detailSkill.source,
+          }}
+        ></div>
+      </SlideOver>
     </div>
   );
 };
