@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "HTML & CSS",
+    "source": "Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML\" target=\"_blank\" class=\"underline hover:opacity-70\">https://developer.mozilla.org/en-US/docs/Web/HTML</a> , <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS\" target=\"_blank\" class=\"underline hover:opacity-70\">https://developer.mozilla.org/en-US/docs/Web/CSS</a>",
+    "description": "<p class=\"text-indent-4\">HTML (HyperText Markup Language) is the fundamental building block for webpages. It defines the structure and meaning of content, separate from presentation (CSS) and interactivity (JavaScript). HTML uses tags to mark up text, images, and other elements for browsers to interpret and display. These tags come in various types, like &lt;p&gt; for paragraphs, &lt;img&gt; for images, and many more. The key concept is that elements are enclosed by angled brackets \"&lt;\" and \"&gt;\".  While tags can be written in different cases, lowercase is the recommended standard.</p><br /><hr class=\"my-4\" /><br /><p class=\"text-indent-4\">Cascading Style Sheets (CSS) is a language that defines how HTML and XML elements are displayed. It's a foundational technology for the web, with consistent implementation across browsers based on W3C standards. While there used to be numbered CSS versions (CSS1, CSS2.1, etc.), development is now modular, with ongoing updates to individual modules (e.g., CSS Color Module Level 5). This avoids versioning the entire specification and allows for more targeted improvements.</p>",
+    "author": "Tim Berners-Lee, Håkon Wium Lie",
+    "release": "1993 (HTML), 1996 (CSS)"
+  },
+  {
+    "id": 2,
+    "name": "PHP",
+    "source": "Source: <a href=\"https://www.php.net/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://www.php.net/</a>",
+    "description": "<p class=\"text-indent-4\">PHP (Hypertext Preprocessor) is a popular server-side scripting language designed for web development. It is especially suited for web development and can be embedded into HTML. PHP code is executed on the server, and the result is returned to the browser as plain HTML.</p>",
+    "author": "Rasmus Lerdorf",
+    "release": "1995"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "source": "Source: <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript\" target=\"_blank\" class=\"underline hover:opacity-70\">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a>",
+    "description": "<p class=\"text-indent-4\">JavaScript is a versatile, high-level programming language that is one of the core technologies of the web, alongside HTML and CSS. It enables interactive web pages and is an essential part of web applications. The majority of websites use it, and all major web browsers have a dedicated JavaScript engine to execute it.</p>",
+    "author": "Brendan Eich",
+    "release": "1995"
+  },
+  {
+    "id": 4,
+    "name": "Python",
+    "source": "Source: <a href=\"https://www.python.org/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://www.python.org/</a>",
+    "description": "<p class=\"text-indent-4\">Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used in web development, data science, artificial intelligence, scientific computing, and more.</p>",
+    "author": "Guido van Rossum",
+    "release": "1991"
+  },
+  {
+    "id": 5,
+    "name": "MySql",
+    "source": "Source: <a href=\"https://www.mysql.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://www.mysql.com/</a>",
+    "description": "<p class=\"text-indent-4\">MySQL is an open-source relational database management system (RDBMS). It is one of the most popular databases used for web applications, known for its speed, reliability, and ease of use. MySQL is widely used in various applications, including web databases, data warehousing, e-commerce, and logging applications.</p>",
+    "author": "Michael Widenius, David Axmark, Allan Larsson",
+    "release": "1995"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "source": "Source: <a href=\"https://www.postgresql.org/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://www.postgresql.org/</a>",
+    "description": "<p class=\"text-indent-4\">PostgreSQL is a powerful, open-source object-relational database system. It has a strong reputation for reliability, feature robustness, and performance. PostgreSQL supports a wide variety of data types and provides powerful data integrity and concurrency control mechanisms.</p>",
+    "author": "Michael Stonebraker, et al.",
+    "release": "1996"
+  },
+  {
+    "id": 7,
+    "name": "SQL Server",
+    "source": "Source: <a href=\"https://www.microsoft.com/en-us/sql-server\" target=\"_blank\" class=\"underline hover:opacity-70\">https://www.microsoft.com/en-us/sql-server</a>",
+    "description": "<p class=\"text-indent-4\">Microsoft SQL Server is a relational database management system developed by Microsoft. It is designed to store and retrieve data requested by other software applications, whether on the same computer or across a network. SQL Server provides enterprise-grade database management capabilities and integrates well with other Microsoft products.</p>",
+    "author": "Microsoft",
+    "release": "1989"
+  },
+  {
+    "id": 8,
+    "name": "Bootstrap",
+    "source": "Source: <a href=\"https://getbootstrap.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://getbootstrap.com/</a>",
+    "description": "<p class=\"text-indent-4\">Bootstrap is a popular open-source CSS framework for developing responsive and mobile-first websites. It includes a collection of CSS and JavaScript components that provide common interface elements such as forms, buttons, navigation, and more, helping developers build consistent and visually appealing web pages quickly.</p>",
+    "author": "Mark Otto, Jacob Thornton",
+    "release": "2011"
+  },
+  {
+    "id": 9,
+    "name": "Tailwind",
+    "source": "Source: <a href=\"https://tailwindcss.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://tailwindcss.com/</a>",
+    "description": "<p class=\"text-indent-4\">Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing custom CSS. It encourages a different approach to building styles, focusing on the rapid creation of user interfaces by applying pre-designed utility classes directly in the HTML.</p>",
+    "author": "Adam Wathan, Jonathan Reinink, David Hemphill, Steve Schoger",
+    "release": "2017"
+  },
+  {
+    "id": 10,
+    "name": "JQuery",
+    "source": "Source: <a href=\"https://jquery.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://jquery.com/</a>",
+    "description": "<p class=\"text-indent-4\">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers. It has greatly influenced web development by making it easier to interact with DOM elements.</p>",
+    "author": "John Resig",
+    "release": "2006"
+  },
+  {
+    "id": 11,
+    "name": "Laravel",
+    "source": "Source: <a href=\"https://laravel.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://laravel.com/</a>",
+    "description": "<p class=\"text-indent-4\">Laravel is a web application framework with an expressive, elegant syntax. It aims to make the development process a pleasing one for the developer without sacrificing application functionality. Laravel provides powerful tools needed for large, robust applications, including an expressive database migration system, an inversion of control container, and more.</p>",
+    "author": "Taylor Otwell",
+    "release": "2011"
+  },
+  {
+    "id": 12,
+    "name": "CodeIgniter",
+    "source": "Source: <a href=\"https://codeigniter.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://codeigniter.com/</a>",
+    "description": "<p class=\"text-indent-4\">CodeIgniter is a powerful PHP framework with a very small footprint. It is built for developers who need a simple and elegant toolkit to create full-featured web applications. CodeIgniter is known for its speed and performance, as well as its flexibility and ease of use.</p>",
+    "author": "EllisLab",
+    "release": "2006"
+  },
+  {
+    "id": 13,
+    "name": "Vue",
+    "source": "Source: <a href=\"https://vuejs.org/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://vuejs.org/</a>",
+    "description": "<p class=\"text-indent-4\">Vue.js is a progressive JavaScript framework for building user interfaces. It is designed to be incrementally adoptable, with a core library that focuses on the view layer only. Vue.js is easy to integrate into projects and can be used to develop sophisticated single-page applications when used with modern tooling and supporting libraries.</p>",
+    "author": "Evan You",
+    "release": "2014"
+  },
+  {
+    "id": 14,
+    "name": "React",
+    "source": "Source: <a href=\"https://reactjs.org/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://reactjs.org/</a>",
+    "description": "<p class=\"text-indent-4\">React is a JavaScript library for building user interfaces, maintained by Facebook and a community of developers. It allows developers to create large web applications that can update and render efficiently in response to data changes. React is known for its declarative, component-based approach to building UIs.</p>",
+    "author": "Jordan Walke",
+    "release": "2013"
+  },
+  {
+    "id": 15,
+    "name": "Flask Microweb Framework",
+    "source": "Source: <a href=\"https://flask.palletsprojects.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://flask.palletsprojects.com/</a>",
+    "description": "<p class=\"text-indent-4\">Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or other components where pre-existing third-party libraries provide common functions. Flask is known for its simplicity and flexibility.</p>",
+    "author": "Armin Ronacher",
+    "release": "2010"
+  },
+  {
+    "id": 16,
+    "name": "Git Source Control",
+    "source": "Source: <a href=\"https://git-scm.com/\" target=\"_blank\" class=\"underline hover:opacity-70\">https://git-scm.com/</a>",
+    "description": "<p class=\"text-indent-4\">Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is free and open-source, enabling multiple developers to work together on non-linear development. Git is known for its performance, flexibility, and support for various workflows.</p>",
+    "author": "Linus Torvalds",
+    "release": "2005"
+  }
+]
