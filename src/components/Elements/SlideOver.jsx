@@ -4,13 +4,13 @@ const SlideOver = ({ isOpen, onClose, children, skill = {} }) => {
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity ${
+        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity z-10 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={onClose}
       ></div>
       <div
-        className={`fixed inset-y-0 right-0 max-w-full flex transition-transform transform ${
+        className={`fixed inset-y-0 right-0 max-w-full flex transition-transform transform z-10 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

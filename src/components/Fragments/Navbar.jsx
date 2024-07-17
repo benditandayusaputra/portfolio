@@ -24,10 +24,10 @@ const Navbar = () => {
       name: "About",
       link: "/about",
     },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
+    // {
+    //   name: "Contact",
+    //   link: "/contact",
+    // },
   ];
 
   const sosmeds = [
@@ -70,7 +70,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white font-bold p-4">
+    <nav className="text-light font-bold p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-bold">
           <Logo />
@@ -78,7 +78,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-5 items-center">
           {renderMenus()}
           <div className="flex items-center px-6">
-            <div className="h-6 border-l border-white"></div>
+            <div className="h-6 border-l border-light"></div>
           </div>
           <div className="flex space-x-5 ml-4">{renderSosmeds()}</div>
         </div>
