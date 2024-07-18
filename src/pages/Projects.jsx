@@ -14,14 +14,31 @@ export default function Projects() {
       size: "1400-800",
       src: "/projects/p-1.jpg",
       thumb: "/projects/p-1.jpg",
-      desciption: "Self Parking",
+      desciption:
+        "Self Parking: Online Parking System uses IoT with payment features and opens parking doors using QR Code and can make parking reservations.",
     },
     {
       id: "2",
       size: "1400-800",
       src: "/projects/p-2.jpg",
       thumb: "/projects/p-2.jpg",
-      desciption: "E-Voting",
+      desciption:
+        "E-Voting: Application for selecting OSIS chairman and deputy chairman online and in real time.",
+    },
+    {
+      id: "3",
+      size: "1400-800",
+      src: "/projects/p-3.jpg",
+      thumb: "/projects/p-3.jpg",
+      desciption:
+        "Website Company Profile: One example is the Banjarnegara central taxi website.",
+    },
+    {
+      id: "4",
+      size: "1400-800",
+      src: "/projects/p-4.jpg",
+      thumb: "/projects/p-4.jpg",
+      desciption: "BesEdu: An online school management system.",
     },
   ];
   const onInit = () => {
