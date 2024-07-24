@@ -20,16 +20,16 @@ export default function Certificates() {
     {
       id: "2",
       size: "1400-800",
-      src: "/certicates/lks_provinsi.jpg",
-      thumb: "/certicates/lks_provinsi.jpg",
+      src: "/certificates/lks_provinsi.jpg",
+      thumb: "/certificates/lks_provinsi.jpg",
       desciption:
         "Central Java Province LKS 2021 in the Field of Web Technology",
     },
     {
       id: "3",
       size: "1400-800",
-      src: "/certicates/iitf_amikom.jpg",
-      thumb: "/certicates/iitf_amikom.jpg",
+      src: "/certificates/iitf_amikom.jpg",
+      thumb: "/certificates/iitf_amikom.jpg",
       desciption:
         "Intermedia Information Technology Festival 2019 at Amikom University",
     },
@@ -58,8 +58,8 @@ export default function Certificates() {
     {
       id: "7",
       size: "1400-800",
-      src: "/certificates/qc.jpg",
-      thumb: "/certificates/qc.jpg",
+      src: "/certificates/qc_evoting.jpg",
+      thumb: "/certificates/qc_evoting.jpg",
       desciption:
         "QC (Quality Control) Application E-Voting For OSIS Voting System 2019 at SMK Negeri 1 Bawang",
     },
