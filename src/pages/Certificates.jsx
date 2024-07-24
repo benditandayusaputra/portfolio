@@ -7,38 +7,69 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import lgHash from "lightgallery/plugins/hash";
 
-export default function Projects() {
+export default function Certificates() {
   const items = [
     {
       id: "1",
       size: "1400-800",
-      src: "/projects/p-1.jpg",
-      thumb: "/projects/p-1.jpg",
+      src: "/certificates/lks_kabupaten.jpg",
+      thumb: "/certificates/lks_kabupaten.jpg",
       desciption:
-        "Self Parking: Online Parking System uses IoT with payment features and opens parking doors using QR Code and can make parking reservations.",
+        "Banjarnegara Regency LKS 2020 in the Field of Web Technology",
     },
     {
       id: "2",
       size: "1400-800",
-      src: "/projects/p-2.jpg",
-      thumb: "/projects/p-2.jpg",
+      src: "/certicates/lks_provinsi.jpg",
+      thumb: "/certicates/lks_provinsi.jpg",
       desciption:
-        "E-Voting: Application for selecting OSIS chairman and deputy chairman online and in real time.",
+        "Central Java Province LKS 2021 in the Field of Web Technology",
     },
     {
       id: "3",
       size: "1400-800",
-      src: "/projects/p-3.jpg",
-      thumb: "/projects/p-3.jpg",
+      src: "/certicates/iitf_amikom.jpg",
+      thumb: "/certicates/iitf_amikom.jpg",
       desciption:
-        "Website Company Profile: One example is the Banjarnegara central taxi website.",
+        "Intermedia Information Technology Festival 2019 at Amikom University",
     },
     {
       id: "4",
       size: "1400-800",
-      src: "/projects/p-4.jpg",
-      thumb: "/projects/p-4.jpg",
-      desciption: "BesEdu: An online school management system.",
+      src: "/certificates/olimpiade_stimik_antar_bangsa.jpg",
+      thumb: "/certificates/olimpiade_stimik_antar_bangsa.jpg",
+      desciption: "Programming Olympiad 2020 at STMIK Antar Bangsa",
+    },
+    {
+      id: "5",
+      size: "1400-800",
+      src: "/certificates/pyp.jpg",
+      thumb: "/certificates/pyp.jpg",
+      desciption: "Permata Youth Preneur 2020",
+    },
+    {
+      id: "6",
+      size: "1400-800",
+      src: "/certificates/nyia_lipi.jpg",
+      thumb: "/certificates/nyia_lipi.jpg",
+      desciption:
+        "NYIA(National Young Inventors Award) 2020 at Indonesian Institute of Sciences",
+    },
+    {
+      id: "7",
+      size: "1400-800",
+      src: "/certificates/qc.jpg",
+      thumb: "/certificates/qc.jpg",
+      desciption:
+        "QC (Quality Control) Application E-Voting For OSIS Voting System 2019 at SMK Negeri 1 Bawang",
+    },
+    {
+      id: "8",
+      size: "1400-800",
+      src: "/certificates/sertifikat_ujikom.jpg",
+      thumb: "/certificates/sertifikat_ujikom.jpg",
+      desciption:
+        "Basic Programming Cluster Competency Certificate from the Indonesia Professional Certification Authority 2021",
     },
   ];
   const onInit = () => {
