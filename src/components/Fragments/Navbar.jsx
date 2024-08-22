@@ -29,10 +29,6 @@ const Navbar = () => {
       name: "Certificates",
       link: "/certificates",
     },
-    // {
-    //   name: "Contact",
-    //   link: "/contact",
-    // },
   ];
 
   const sosmeds = [

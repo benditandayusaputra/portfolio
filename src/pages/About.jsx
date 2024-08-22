@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import { FaBriefcase, FaBook, FaCheckCircle } from "react-icons/fa";
+import { FaBriefcase, FaBook } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -18,7 +18,6 @@ export default function About() {
 
             <h1 className="text-4xl font-bold mb-4 text-center">About Me</h1>
 
-            {/* Paragraf Pertama */}
             <p
               className="mb-4 text-justify text-base md:text-lg"
               style={{ textIndent: "2em" }}
@@ -29,7 +28,6 @@ export default function About() {
               web developer.
             </p>
 
-            {/* Paragraf Kedua */}
             <p
               className="mb-4 text-justify text-base md:text-lg"
               style={{ textIndent: "2em" }}
