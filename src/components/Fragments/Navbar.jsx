@@ -3,6 +3,7 @@ import { FaInstagram, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
 import Logo from "../Elements/Logo.jsx";
 import Anchor from "../Elements/Anchor.jsx";
 import { Link } from "react-router-dom";
+import SwitchTheme from "../Elements/SwitchTheme.jsx";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +86,9 @@ const Navbar = () => {
             <div className="h-6 border-l border-light"></div>
           </div>
           <div className="flex space-x-5 ml-4">{renderSosmeds()}</div>
+          <div>
+            <SwitchTheme />
+          </div>
         </div>
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu}>

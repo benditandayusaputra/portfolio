@@ -61,7 +61,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="mb-4">
-                <h3 className="font-bold text-lg">FOLLOW</h3>
+                <h3 className="font-bold text-lg">Competition</h3>
                 <ul className="list-disc list-inside ml-4">
                   <li>LKS Web Technology (Kabupaten & Provinsi)</li>
                   <li>

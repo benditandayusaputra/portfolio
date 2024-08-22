@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Elements/Button.jsx";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -30,7 +31,9 @@ const Hero = () => {
           <br className="hidden md:block" /> to learning <b>new technologies</b>
           .
         </p>
-        <Button outline>VIEW MY PROJECTS</Button>
+        <Link to="/projects">
+          <Button outline>VIEW MY PROJECTS</Button>
+        </Link>
       </div>
     </div>
   );
