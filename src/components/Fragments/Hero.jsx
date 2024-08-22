@@ -27,9 +27,8 @@ const Hero = () => {
           <br className="hidden md:block" /> <b>DEVELOPER</b>
         </div>
         <p className="mt-2 mb-8">
-          I'm a Web Developer, and I'm always open{" "}
-          <br className="hidden md:block" /> to learning <b>new technologies</b>
-          .
+          I'm always open to learning
+          <br className="hidden md:block" /> <b>new technologies</b>.
         </p>
         <Link to="/projects">
           <Button outline>VIEW MY PROJECTS</Button>
