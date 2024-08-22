@@ -7,7 +7,6 @@ export default function About() {
       <Layout>
         <div className="text-white flex flex-col items-center justify-center px-4 py-0 mt-10">
           <div className="max-w-4xl w-full px-8 py-0">
-            {/* Avatar */}
             <div className="flex justify-center mb-8">
               <img
                 src="/me-sq.png"
