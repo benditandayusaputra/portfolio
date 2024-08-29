@@ -41,25 +41,25 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="sm:p-6 max-w-4xl mx-auto mt-2 sm:mt-4">
-          <div className="flex justify-between align-top">
-            <div>
-              <div className="flex items-center mb-2 sm:mb-4">
-                <FaBriefcase className="text-white text-2xl sm:text-3xl mr-2" />
+        <div className="sm:p-6 max-w-4xl mx-auto sm:mt-4 sm:px-8 py-10">
+          <div className="flex flex-col sm:flex-row justify-between sm:space-x-4 items-center">
+            <div className="mb-4 sm:mb-0 sm:w-1/2 text-center sm:text-left">
+              <div className="flex flex-row items-center justify-center sm:items-start sm:justify-start mb-2 sm:mb-4">
+                <FaBriefcase className="text-white text-2xl sm:text-3xl mr-2 sm:mb-2 sm:mb-0" />
                 <div className="text-white text-xl sm:text-2xl font-semibold">
                   EXPERIENCE
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 mx-5 sm:mx-0">
                 <h3 className="font-bold text-lg">PKL</h3>
-                <ul className="list-disc list-inside ml-4">
+                <ul className="list-disc list-inside px-5 text-left">
                   <li>Galaxy Digital Printing</li>
                   <li>PT Traspac</li>
                 </ul>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 mx-5 sm:mx-0">
                 <h3 className="font-bold text-lg">Competition</h3>
-                <ul className="list-disc list-inside ml-4">
+                <ul className="list-disc list-inside ml-4 text-left">
                   <li>LKS Web Technology (Kabupaten & Provinsi)</li>
                   <li>
                     National Young Inventors Award (NYIA) - Kompetisi LIPI
@@ -70,30 +70,30 @@ export default function About() {
                 </ul>
               </div>
             </div>
-            <div>
-              <div className="flex items-center mb-2 sm:mb-4 justify-end">
-                <FaBook className="text-white text-2xl sm:text-3xl mr-2" />
+            <div className="sm:w-1/2 text-center sm:text-right">
+              <div className="flex flex-row items-center justify-center sm:flex-row sm:items-start sm:justify-end mb-4">
+                <FaBook className="text-white text-2xl sm:text-3xl mr-2 sm:mb-2 sm:mb-0" />
                 <div className="text-white text-xl sm:text-2xl font-semibold">
                   EDUCATION
                 </div>
               </div>
               <div>
-                <p className="mb-2 sm:mb-4 text-right">
+                <p className="mb-2 sm:mb-4">
                   2008 - 2009 | <strong>Kindergarten</strong>
                   <br />
                   <span className="ml-4">Cokroaminoto 2 Bondolharjo</span>
                 </p>
-                <p className="mb-2 sm:mb-4 text-right">
+                <p className="mb-2 sm:mb-4">
                   2009 - 2015 | <strong>Elementary School</strong>
                   <br />
                   <span className="ml-4">Negeri 1 Bondolharjo</span>
                 </p>
-                <p className="mb-2 sm:mb-4 text-right">
+                <p className="mb-2 sm:mb-4">
                   2015 - 2018 | <strong>Junior High School</strong>
                   <br />
                   <span className="ml-4">Negeri 1 Wanadadi Banjarnegara</span>
                 </p>
-                <p className="mb-2 sm:mb-4 text-right">
+                <p className="mb-2 sm:mb-4">
                   2018 - 2021 | <strong>Vocational School</strong>
                   <br />
                   <span className="ml-4">Negeri 1 Bawang Banjarnegara</span>
