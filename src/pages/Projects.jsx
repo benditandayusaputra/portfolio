@@ -67,7 +67,7 @@ export default function Projects() {
                   <img
                     alt={item.id}
                     src={item.thumb}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               ))}
