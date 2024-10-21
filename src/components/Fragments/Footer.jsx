@@ -11,16 +11,16 @@ const Footer = () => {
       link: "/",
     },
     {
-      name: "Projects",
-      link: "/projects",
-    },
-    {
       name: "About",
       link: "/about",
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      name: "Certificates",
+      link: "/certificates",
     },
   ];
 
